@@ -1,0 +1,83 @@
+{
+    "key": "group_5cc6a9d124bd9",
+    "title": "Direct Messages",
+    "fields": [
+        {
+            "key": "field_5cc6a9dc7bd5e",
+            "label": "Enable Direct Messages?",
+            "name": "messages_enabled",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5cc902ac78e35",
+            "label": "Enable Compose Message?",
+            "name": "messages_enable_compose",
+            "type": "true_false",
+            "instructions": "Allows users to find and message any other user on the site. If disabled, users can only be found via the \"Direct Message\" action in single listing pages.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5cc6ad2ad51af",
+            "label": "Maximum Message Length",
+            "name": "messages_max_length",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 2000,
+            "placeholder": 2000,
+            "prepend": "",
+            "append": "characters",
+            "min": 0,
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-messages-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1556677833
+}

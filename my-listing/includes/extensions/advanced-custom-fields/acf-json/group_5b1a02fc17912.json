@@ -1,0 +1,171 @@
+{
+    "key": "group_5b1a02fc17912",
+    "title": "Promotion Package",
+    "fields": [
+        {
+            "key": "field_5b209f2dd40a6",
+            "label": "Promoted Listing",
+            "name": "_listing_id",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "promote-listing-setting",
+                "id": ""
+            },
+            "post_type": [
+                "job_listing"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_5b20e418dde1c",
+            "label": "Promoted Until",
+            "name": "_expires",
+            "type": "date_time_picker",
+            "instructions": "Listing will be promoted until this date, after which, the promotion package expires.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y g:i a",
+            "return_format": "Y-m-d H:i:s",
+            "first_day": 1
+        },
+        {
+            "key": "field_5b1a02fc3f3f9",
+            "label": "Duration",
+            "name": "_duration",
+            "type": "number",
+            "instructions": "Number of days that the listing can be promoted with this package.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "cts-hidden",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Default",
+            "prepend": "",
+            "append": "",
+            "min": 0,
+            "max": "",
+            "step": 1
+        },
+        {
+            "key": "field_5b1a0325f6e4f",
+            "label": "Listing Priority",
+            "name": "_priority",
+            "type": "number",
+            "instructions": "Higher value means the listing will have higher priority in search results.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 2,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 0,
+            "max": "",
+            "step": 1
+        },
+        {
+            "key": "field_5b1a02fc3fffc",
+            "label": "User",
+            "name": "_user_id",
+            "type": "user",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "role": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id"
+        },
+        {
+            "key": "field_5b1a02fc40400",
+            "label": "Product",
+            "name": "_product_id",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "product"
+            ],
+            "taxonomy": [
+                "product_type:promotion_package"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_5b1a02fc40773",
+            "label": "Order",
+            "name": "_order_id",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "order-by-date prepend-item-id",
+                "id": ""
+            },
+            "post_type": [
+                "shop_order"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "cts_promo_package"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": [
+        "author"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1598355931
+}

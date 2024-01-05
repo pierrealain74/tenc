@@ -1,0 +1,152 @@
+{
+    "key": "group_5ac3be934d00f",
+    "title": "Social Login",
+    "fields": [
+        {
+            "key": "field_5acef9220d6f2",
+            "label": "Google",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5acebae78661c",
+            "label": "Enable Sign-In with Google?",
+            "name": "social_login_google_enabled",
+            "type": "true_false",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5ab1764850f18",
+            "label": "Client ID",
+            "name": "social_login_google_client_id",
+            "type": "text",
+            "value": null,
+            "instructions": "To integrate Google Sign-In into your website, you must first create a client ID. You can get one <a href=\"https:\/\/developers.google.com\/identity\/sign-in\/web\/sign-in\" target=\"_blank\">here<\/a>.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5acebae78661c",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5acef93c0d6f3",
+            "label": "Facebook",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5acebb8c4fdbe",
+            "label": "Enable Sign-In with Facebook?",
+            "name": "social_login_facebook_enabled",
+            "type": "true_false",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5acebba54fdbf",
+            "label": "App ID",
+            "name": "social_login_facebook_app_id",
+            "type": "text",
+            "value": null,
+            "instructions": "To integrate Facebook Sign-In into your website, you must first acquire an app ID. You can get one <a href=\"https:\/\/developers.facebook.com\/docs\/apps\/register\" target=\"_blank\">here<\/a>.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5acebb8c4fdbe",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-social-login-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1523513850
+}
